@@ -23,9 +23,9 @@ json_parser = SimpleJsonOutputParser()
 
 json_chain = json_prompt | llmModel | json_parser
 
-response = json_chain.invoke({"question": "What is the biggest country?"})
+response = json_chain.invoke({"question": "Who is the oldest head of state in the world, exclude country a king or queen?"})
 
-print("What is the biggest country?")
+print("Who is the oldest head of state in the world?")
 print(response)
 
 print("\n----------\n")

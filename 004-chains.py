@@ -18,8 +18,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.prompts import FewShotChatMessagePromptTemplate
 
 examples = [
-    {"input": "hi!", "output": "¡hola!"},
-    {"input": "bye!", "output": "¡adiós!"},
+    {"input": "hi!", "output": "salut!"},
+    {"input": "bye!", "output": "aurevoir!"},
 ]
 
 example_prompt = ChatPromptTemplate.from_messages(
@@ -36,7 +36,7 @@ few_shot_prompt = FewShotChatMessagePromptTemplate(
 
 final_prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", "You are an English-Spanish translator."),
+        ("system", "You are an English-french translator."),
         few_shot_prompt,
         ("human", "{input}"),
     ]

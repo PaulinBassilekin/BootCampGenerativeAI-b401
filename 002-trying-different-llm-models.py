@@ -9,17 +9,17 @@ llamaChatModel = ChatGroq(
 )
 
 mistralChatModel = ChatGroq(
-    model="mixtral-8x7b-32768"
+    model="mistral-saba-24b"
 )
 
 messages = [
     ("system", "You are an historian expert in the Kennedy family."),
-    ("human", "How many members of the family died tragically?"),
+    ("human", "image of the Kennedy family"),
 ]
 
 print("\n----------\n")
 
-print("How many members of the family died tragically? - LLama3 Response:")
+print("image of kennedy family - LLama3 Response:")
 
 print("\n----------\n")
 
@@ -29,7 +29,7 @@ print(llamaResponse.content)
 
 print("\n----------\n")
 
-print("How many members of the family died tragically? - Mistral Response:")
+print("image of kennedy family - Mistral Response:")
 
 print("\n----------\n")
 
